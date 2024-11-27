@@ -1,0 +1,412 @@
+:root {
+    --background-color: rgb(43, 43, 43);
+    --second-background-color: rgb(230, 230, 230);
+    --principal-color: rgb(86, 86, 207);
+    --background-color2: rgba(254, 200, 200);
+    --white: rgb(240, 240, 240);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-family: serif;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 20px 100px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.a-header {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+ul {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.li-header:hover {
+    cursor: pointer;
+}
+
+.li-header:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.input-header {
+    height: 20px;
+    width: 200px;
+    border: solid 1px var(--background-color);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--background-color);
+    padding: 5px 10px;
+}
+
+.input-header:hover {
+    box-shadow: 0 0 2px 1px black;
+    transition: 0.2s ease-in-out;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#intro-home {
+    color: var(--white);
+    height: auto;
+    max-height: 101vh;
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+    text-align: center;
+    color: var(--background-color);
+    padding: 90px 0;
+}
+
+#intro-home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(Images/fond-ecran/top-view-multicolored-flowers.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+.h1-home {
+    font-size: 6rem;
+}
+
+.h1-secondary {
+    font-size: 4rem;
+    margin: 0 0 30px 0;
+}
+
+.title {
+    font-family: sans-serif;
+}
+
+.p-intro {
+    width: 90vw;
+    line-height: 4svw;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+
+.div-bouquet-home {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px 10px;
+    width: 100vw;
+}
+
+.img-bouquet {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.img-bouquet:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+#service {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.child-div-service {
+    width: 30%;
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.h4-service {
+    font-size: 2vw;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.p-service {
+    line-height: 22px;
+}
+
+/* Style qui permet l'augmenter et de diminuer le max-height en cliquant sur un label connecter à un checkbox */
+
+/* .p-service {
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.checkbox-service, .label-service-close {
+    display: none;
+}
+
+.checkbox-service:checked ~.p-service  {
+  max-height: 300px;
+}
+
+.checkbox-service:checked ~.label-service-open  {
+    display: none;
+}
+
+.checkbox-service:checked ~.label-service-close  {
+    display: inline-block;
+}
+
+.label-service-open, .label-service-close {
+    color: blue;
+    text-decoration:underline;
+    cursor: pointer;
+} */
+
+footer {
+    background-color: var(--background-color);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 0 0;
+    align-items: center;
+    color: white;
+}
+
+/* CSS de la page entreprise.html */
+
+#main-entreprise {
+    background-image: url(/Images/fond-ecran/fond-ecran4.jpg);
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    z-index: -1;
+}
+
+.div-content {
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 0 0 20px 0;
+}
+
+#img-div-team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    width: 100%;
+    height: 740px;
+    margin: 0 auto;
+    justify-items: center;
+    row-gap: 100px;
+    padding: 0 20px;
+    column-gap: 20px;
+}
+
+.figure-img-team {
+    background-color: var(--second-background-color);
+    height: 340px;
+    border-radius: 11px;
+    border: 1px solid var(--background-color);
+    box-shadow: 1px 1px 2px var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+    width: 100%;
+}
+
+.figure-img-team:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+.img-team {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.figcap-img-team {
+    text-align: center;
+}
+
+.figcap-name {
+    font-weight: bold;
+}
+
+.figcap-role {
+    width: 100%;
+}
+
+/* CSS de la page contact.html */
+
+.contact-intro {
+    padding: 80px 80px;
+}
+
+.flex-contact {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#info-personal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 30px;
+}
+
+fieldset {
+    border: none;
+}
+
+.mail-fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-fieldset {
+    text-align: left;
+}
+
+input {
+    background-color: var(--white);
+    border-width: 0 0 1px 0;
+    border-color: black;
+    padding: 5px;
+}
+
+#mail-form {
+    margin: 4px 0 0 0;
+}
+
+select {
+    border: none;
+    background-color: var(--white);
+    width: 110px;
+}
+
+textarea {
+    padding: 5px;
+    height: 120px;
+}
+
+.form-button {
+    width: 100px;
+    margin: 0 auto;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    transform: scale(1.1)
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CSS de la page realisation.html */
+
+.realisation-intro {
+    padding: 80px 20px;
+}
+
+.realisation-div {
+    column-count: 5;
+    column-gap: 15px;
+}
+
+.realisation-img {
+    width: 100%;
+    margin: 0 0 15px 0;
+    border-radius: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    header {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .intro {
+        padding: 129px 0;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .div-bouquet-home {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    #service {
+        flex-direction: column;
+        border: 2px solid red;
+        row-gap: 20px;
+    }
+
+    .child-div-service {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 1000px) {
+    #intro-home {
+      height: auto;
+    }
+} */
+
+/* @media (max-width: 475px) {
+    .intro {
+        padding: 100px 0;
+        gap: 10px;
+    }
+} */

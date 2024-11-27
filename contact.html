@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>BloomPetals</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="home.html" class="a-header">
+                <li class="li-header">Home</li>
+            </a>
+            <a href="entreprise.html" class="a-header">
+                <li class="li-header">Entreprise</li>
+            </a>
+            <a href="realisation.html" class="a-header">
+                <li class="li-header">Réalisation</li>
+            </a>
+            <a href="contact.html" class="a-header">
+                <li class="li-header">Contact</li>
+            </a>
+        </ul>
+        <input type="text" class="input-header" placeholder="Rechercher...">
+    </header>
+    <main>
+        <div class="intro contact-intro">
+            <h1 class="h1-secondary title">CONTACT</h1>
+            <div class="flex-contact">
+                <form class="contact-form" action="url">
+                    <fieldset id="info-personal-form">
+                        <legend class="title">INFORMATIONS PERSONNELS</legend>
+                        <label></label>
+                        <select>
+                            <option>Monsieur</option>
+                            <option>Madame</option>
+                            <option>Mademoiselle</option>
+                            <option>Autre</option>
+                        </select>
+                        <fieldset class="name-fieldset">
+                            <label>Nom : </label>
+                            <input type="text" placeholder="Ferrand" required />
+                            <label>Prénom : </label>
+                            <input type="text" placeholder="Clément" required />
+                        </fieldset>
+                        <fieldset class="mail-fieldset">
+                            <legend>Adresse postale : </legend>
+                            <label class="mail-label-form" for="mail-form"></label>
+                            <input id="mail-form" type="email" placeholder="theo.hernandez@gmail.com" required />
+                        </fieldset>
+                    </fieldset>
+                    <textarea row="20px" cols="20px" placeholder="Écrivez votre message" required></textarea>
+                    <fieldset class="checkbox-fieldset">
+                        <input id="checkbox-form" type="checkbox" required />
+                        <label class="" for="checkbox-form">Valider les politiques de confidentialités</label>
+                    </fieldset>
+                    <button class="form-button" type="submit">Envoyer</button>
+                </form>
+                <div class="contact-details">
+                    <h2 class="title">CONTACT DETAILS</h2><br>
+                    <div>
+                        <h4><strong>Numéro de téléphone :</strong></h4>
+                        <p>+33 1 23 45 67 89</p>
+                    </div>
+                    <div>
+                        <h4><strong>Adresse e-mail :</strong></h4>
+                        <p>contact@bloompetals.fr</p>
+                    </div>
+                    <div>
+                        <h4><strong>Adresse :</strong></h4>
+                        <p>123 Rue des Fleurs, 75008 Paris, France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 BloomPetals. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
